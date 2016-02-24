@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/prakashg/.linuxbrew/Cellar/node/5.4.0/bin/node',
+1 verbose cli   '/home/prakashg/.linuxbrew/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/prakashg/Appium/uiautomator2',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/prakashg/.npm/uiautomator2/1.0.2/package.tgz not in flight; packing
+9 info lifecycle uiautomator2@1.0.2~prepublish: uiautomator2@1.0.2
+10 verbose lifecycle uiautomator2@1.0.2~prepublish: unsafe-perm in lifecycle true
+11 verbose lifecycle uiautomator2@1.0.2~prepublish: PATH: /home/prakashg/.linuxbrew/lib/node_modules/npm/bin/node-gyp-bin:/home/prakashg/Appium/uiautomator2/node_modules/.bin:/home/prakashg/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/prakashg/android-sdk-linux/tools:/home/prakashg/android-sdk-linux/platform-tools
+12 verbose lifecycle uiautomator2@1.0.2~prepublish: CWD: /home/prakashg/Appium/uiautomator2
+13 silly lifecycle uiautomator2@1.0.2~prepublish: Args: [ '-c', 'gradle assembleDebugAndroidTest' ]
+14 silly lifecycle uiautomator2@1.0.2~prepublish: Returned: code: 0  signal: null
+15 verbose tar pack [ '/home/prakashg/.npm/uiautomator2/1.0.2/package.tgz',
+15 verbose tar pack   '/home/prakashg/Appium/uiautomator2' ]
+16 verbose tarball /home/prakashg/.npm/uiautomator2/1.0.2/package.tgz
+17 verbose folder /home/prakashg/Appium/uiautomator2
+18 verbose addLocalTarball adding from inside cache /home/prakashg/.npm/uiautomator2/1.0.2/package.tgz
+19 silly cache afterAdd uiautomator2@1.0.2
+20 verbose afterAdd /home/prakashg/.npm/uiautomator2/1.0.2/package/package.json not in flight; writing
+21 verbose afterAdd /home/prakashg/.npm/uiautomator2/1.0.2/package/package.json written
+22 silly publish { name: 'uiautomator2',
+22 silly publish   version: '1.0.2',
+22 silly publish   description: '"Uiatomator driver"',
+22 silly publish   main: 'index.js',
+22 silly publish   scripts: { prepublish: 'gradle assembleDebugAndroidTest' },
+22 silly publish   author: { name: 'PrakashGoulla' },
+22 silly publish   license: 'ISC',
+22 silly publish   readme: 'Uiautomator lib\n',
+22 silly publish   readmeFilename: 'README.md',
+22 silly publish   gitHead: 'e5de1daab38425dfd49c4fc90ca30162d9ab148c',
+22 silly publish   _id: 'uiautomator2@1.0.2',
+22 silly publish   _shasum: 'af2a56cdf97ee208bb8ecfb1666f5046c7566c09',
+22 silly publish   _from: '.' }
+23 verbose getPublishConfig undefined
+24 silly mapToRegistry name uiautomator2
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/uiautomator2
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/prakashg/.npm/uiautomator2/1.0.2/package.tgz
+30 verbose request uri https://registry.npmjs.org/uiautomator2
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:24:52 PM
+33 verbose request using bearer token for auth
+34 verbose request id 1f133fa6ec1d8038
+35 http request PUT https://registry.npmjs.org/uiautomator2
+36 http 403 https://registry.npmjs.org/uiautomator2
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 15 Feb 2016 15:54:55 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1455551693.880598,VS0,VE1264' }
+38 verbose request invalidating /home/prakashg/.npm/registry.npmjs.org/uiautomator2 on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : uiautomator2
+40 verbose stack     at makeError (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/request/request.js:198:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/home/prakashg/.linuxbrew/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+41 verbose statusCode 403
+42 verbose pkgid uiautomator2
+43 verbose cwd /home/prakashg/Appium/uiautomator2
+44 error Linux 3.16.0-51-generic
+45 error argv "/home/prakashg/.linuxbrew/Cellar/node/5.4.0/bin/node" "/home/prakashg/.linuxbrew/bin/npm" "publish"
+46 error node v5.4.0
+47 error npm  v3.3.12
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.2." : uiautomator2
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
