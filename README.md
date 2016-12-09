@@ -1,16 +1,4 @@
 appium-uiautomator2-installer
 ===================
 
-Work in progress, stay tuned!
-
-## Watch
-
-```
-npm run watch
-```
-
-## Test
-
-```
-npm test
-```
+# [DEPRECATED] this module has been moved into [appium-uiautomator2-driver](https://github.com/appium/appium-uiautomator2-driver)
